@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手相講座 - 手相のマヨネリ</title>
+    <meta name="description" content="手相学を基礎から応用まで学べる個別講座。全15回のマンツーマン指導で、確かな技術を習得できます。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* X(Twitter)アイコンのフォールバック */
+        .fa-x-twitter::before {
+            content: "\e61b";
+        }
+        /* FontAwesomeが読み込まれない場合の代替 */
+        .footer-sns a[href*="x.com"] i::before,
+        .sns-btn.twitter i::before {
+            content: "𝕏" !important;
+            font-family: Arial, sans-serif !important;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">手相のマヨネリ</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">ホーム</a></li>
+                        <li><a href="kouza.html" class="nav-link active">手相講座</a></li>
+                        <li><a href="kantei.html" class="nav-link">手相鑑定</a></li>
+                        <li><a href="gakkai.html" class="nav-link">手相学会</a></li>
+                        <li><a href="shindan.html" class="nav-link">手相診断</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title fade-in">手相学習得プログラム</h1>
+            <p class="page-subtitle fade-in">インプットとアウトプットを同時に行い、素早く技術を習得する個別講座です</p>
+        </div>
+    </section>
+
+    <!-- カリキュラム -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">カリキュラム</h2>
+            <p class="section-subtitle">手相学を基礎から応用まで、7章構成で体系的に学べます</p>
+            <div class="curriculum">
+                <div class="curriculum-item fade-in">
+                    <div class="curriculum-number">第1章</div>
+                    <div class="curriculum-content">
+                        <h3 class="curriculum-title">手相学概論</h3>
+                        <p class="curriculum-description">手相のポテンシャル、得意分野などを解説</p>
+                    </div>
+                </div>
+                <div class="curriculum-item fade-in">
+                    <div class="curriculum-number">第2章</div>
+                    <div class="curriculum-content">
+                        <h3 class="curriculum-title">手のひらから読み取るエネルギーと法則性</h3>
+                        <p class="curriculum-description">手相に現れる法則性・リソースの概念を解説</p>
+                    </div>
+                </div>
+                <div class="curriculum-item fade-in">
+                    <div class="curriculum-number">第3章</div>
+                    <div class="curriculum-content">
+                        <h3 class="curriculum-title">基礎知識（手形、丘）</h3>
+                        <p class="curriculum-description">手形、丘から読み取れる知識を解説</p>
+                    </div>
+                </div>
+                <div class="curriculum-item fade-in">
+                    <div class="curriculum-number">第4章</div>
+                    <div class="curriculum-content">
+                        <h3 class="curriculum-title">流年の使い方</h3>
+                        <p class="curriculum-description">2種類の流年と活用方法を解説</p>
+                    </div>
+                </div>
+                <div class="curriculum-item fade-in">
+                    <div class="curriculum-number">第5章</div>
+                    <div class="curriculum-content">
+                        <h3 class="curriculum-title">基礎知識（3大線、障害線）</h3>
+                        <p class="curriculum-description">3大線の見方、応用法・障害線の見方を解説</p>
+                    </div>
+                </div>
+                <div class="curriculum-item fade-in">
+                    <div class="curriculum-number">第6章</div>
+                    <div class="curriculum-content">
+                        <h3 class="curriculum-title">悩みへのアプローチ方法</h3>
+                        <p class="curriculum-description">手相を用いて悩みに対してアプローチする方法を解説</p>
+                    </div>
+                </div>
+                <div class="curriculum-item fade-in">
+                    <div class="curriculum-number">第7章</div>
+                    <div class="curriculum-content">
+                        <h3 class="curriculum-title">複雑な手相と応用</h3>
+                        <p class="curriculum-description">複雑で難解な手相を実例を元に解説</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 受講者の特徴 -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">受講者の特徴</h2>
+            <p class="section-subtitle">手相初心者はもちろんのこと、過去に手相講座を受けたことのある上級者の方からも好評いただいています</p>
+            <div class="stats-image">
+                <img src="images/wariai.png" alt="受講者の割合" class="fade-in">
+            </div>
+        </div>
+    </section>
+
+    <!-- 受講者の声 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">受講者の声</h2>
+            <div class="reviews">
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">手相学び始めて、鑑定していくうちに、良く言われている手相の意味に違和感を持つようになり、手相を深く掘り下げている方や、本当に何かが納得できる内容を発信している方もいなかったため、自分なりに考えてはいたのですが、答えも無く…どこかで学べる場面してくださる方はいないかなぁと探しかけていたところ、これだ！！！と思う講座が見つけました！絶対この方から学ばうと心に決め講座を申し込みしました🥰 講座のテキストもすごくシンプルなのにとても奥が深く、手相の本当の意味について学び、とにかく鑑定がすごく楽になりました🥰 そして講座はいつも丁寧に対応していただきとっても手厚い！マヨネリさん自身手相だけではなく、知識が本当に幅広く色々な切り口でもらいました！僕もすべて負担かかりすぎてない心配になるくらい笑 手相は暗記ではなく仕組みを知るだけで、エンタメ鑑定しなくて済む。本当にお客様の悩みを解決できるのはマヨネリさんの講座しかないと感じます！マヨネリさん素敵な講座をありがとうございました🥰</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">他でも勉強したが、全ての線の意味を明確な根拠を持って説明出来るようになったのはこの講座はここしかない。手相を勉強したいなら絶対オススメ。</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">マヨネリさんの手相講座は、たいへん楽しいです。実際にたくさんの手相をみながら具体的に教えていただけます。また、教えていただいたことを自分なりに理解を深めるために練習のため、ニューマンツーマンなので率直に思ったことは、即質問でき、答えていただけます。そして、私のたいへいないおしゃべりにも付き合っていただいたり、細かいところまで気にかけてくださいます🙏 講座を受けているとき、「手相で悩が深いということに改めて気づかされることが多くあります。思い切って講座に申し込んで良かったなぁと思います。</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">もともと手相に興味があり独学で勉強をしていましたが、すぐに行き詰まり細々と続けていた時にマヨネリさんの講座に出会いました。見る線が何になるかの判断は、初心者にはとても難しいです。マヨネリさんの講座は、よくある手相のイメージを覆すもので、毎回興味深い内容です。今まで手相で分かることは、お分く的な占いだと思っていましたが、手相を通じて自分を知ること以上のことが詰まっていて、きちんと読める人が読めば当たります。講座も暗記ではなく体系化されるので、ショート動画などでよく見るような手相だけを切り取るよりずっと分かりやすく覚えやすく実用的です。変な本や講座をつまむより、マヨネリさんから基本を教わって実践してのがホンモノへの1番の近道だと思いました。マンツーマンなので質問しやすく、講座の自由度も高いです。いつもありがとうございます！本年も宜しくお願いします🙏🔥</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">今まで自分なりに手相を学んできましたが、ネットや本にある知識では根拠が足りず中々実践には進めませんでした。しかしマヨネリさんの講座を受けてからは今まで知りたかった手相の根拠や仕組みを学ぶことができ、鑑定力や応用力がどんどん身についていきました！講座は1対1なので遠慮なく質問ができ、マヨネリさんも優しく楽しく分かりやすく話してくださるので本当に頭に入りやすいです。手相を習得するには欠かせない講座です。いつもありがとうございます♥️</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- どんな方におすすめ？ -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">どんな方におすすめ？</h2>
+            <div class="recommend-grid">
+                <div class="recommend-card fade-in">
+                    <div class="recommend-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="recommend-title">腑に落ちるような手相鑑定を行いたい</h3>
+                    <p class="recommend-description">手相鑑定を通して、この相の意味は分けるけど、事実と合っているかわからない。線の説明はできるけど根拠がないから自信がないなどの経験はありませんか？本講座では、手相の法則に基づいた論理的な鑑定を行えるようカリキュラムを組んでいます。</p>
+                </div>
+                <div class="recommend-card fade-in">
+                    <div class="recommend-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="recommend-title">休みが不定期で時間を確保できない</h3>
+                    <p class="recommend-description">講座の受講ペースはある程度自由に組むことができます。週一、月二、月曜日午前中限定など受講者様に合わせたペース配分が可能です。</p>
+                </div>
+                <div class="recommend-card fade-in">
+                    <div class="recommend-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="recommend-title">手相を用いて自他問わず悩みに向き合いたい</h3>
+                    <p class="recommend-description">手相を悩みを解決するための技術として用いるノウハウを提供します。</p>
+                </div>
+                <div class="recommend-card fade-in">
+                    <div class="recommend-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="recommend-title">実戦経験がなく、実際の鑑定で力を発揮できるか不安</h3>
+                    <p class="recommend-description">講座の中で実践形式で鑑定をすることができるため、自信を身につけることができます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 受講特典 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">受講特典</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3 class="benefit-title">講座資料全配布</h3>
+                    <p class="benefit-description">講座に使用する約80Pの資料PDFを配布します</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="benefit-title">全講座復習可能</h3>
+                    <p class="benefit-description">講座の様子は録画し個別に限定公開します</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="benefit-title">チャット相談</h3>
+                    <p class="benefit-description">講座受講中は個別チャット相談を受けることができます</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金プラン -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">受講料金</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3 class="pricing-title">基礎コース</h3>
+                    <div class="pricing-chapters">第1章〜第3章</div>
+                    <div class="pricing-price">¥130,000</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 手相学概論</li>
+                        <li><i class="fas fa-check"></i> エネルギーと法則性</li>
+                        <li><i class="fas fa-check"></i> 基礎知識（手形、丘）</li>
+                    </ul>
+                    <a href="https://lin.ee/pfM9Tjo" class="btn btn-primary" target="_blank" rel="noopener">申し込む</a>
+                </div>
+                <div class="pricing-card pricing-featured fade-in">
+                    <div class="pricing-badge">おすすめ</div>
+                    <h3 class="pricing-title">フルコース</h3>
+                    <div class="pricing-chapters">第1章〜第7章</div>
+                    <div class="pricing-price">¥280,000</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 基礎コース内容すべて</li>
+                        <li><i class="fas fa-check"></i> 流年の使い方</li>
+                        <li><i class="fas fa-check"></i> 3大線、障害線</li>
+                        <li><i class="fas fa-check"></i> 悩みへのアプローチ</li>
+                        <li><i class="fas fa-check"></i> 複雑な手相と応用</li>
+                    </ul>
+                    <a href="https://lin.ee/pfM9Tjo" class="btn btn-primary" target="_blank" rel="noopener">申し込む</a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3 class="pricing-title">応用コース</h3>
+                    <div class="pricing-chapters">第4章〜第7章</div>
+                    <div class="pricing-price">¥180,000</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 流年の使い方</li>
+                        <li><i class="fas fa-check"></i> 3大線、障害線</li>
+                        <li><i class="fas fa-check"></i> 悩みへのアプローチ</li>
+                        <li><i class="fas fa-check"></i> 複雑な手相と応用</li>
+                    </ul>
+                    <a href="https://lin.ee/pfM9Tjo" class="btn btn-primary" target="_blank" rel="noopener">申し込む</a>
+                </div>
+            </div>
+            <div class="payment-info">
+                <h3>お支払い方法</h3>
+                <p>銀行振り込み（分割可能）</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>講座の期間はどれくらいですか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>15回の講座を行います。週一回の受講をした場合、約4ヶ月の期間で修了できます。また、一回あたり90分を予定しています。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>どんな方が受講していますか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>手相初心者から実際に手相を用いて活躍している方まで様々です。すでに手相を勉強している方でも新しい学びを提供しています。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>なにか必要なものはありますか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>講座はGoogle Meetを使用します。そのため、Googleアカウントをご用意ください。また、画面共有にて講座を行うため、PCなどの大きい画面での受講をおすすめします。（スマホでも可能）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">プログラムのご質問・お申し込み</h2>
+                <p class="cta-description">公式LINEまでご連絡ください</p>
+                <a href="https://lin.ee/pfM9Tjo" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    <i class="fab fa-line"></i> 公式LINEで相談する
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>手相のマヨネリ</h3>
+                    <p>手相学を通じて、皆様の人生をサポートします</p>
+                </div>
+                <div class="footer-section">
+                    <h4>メニュー</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="kouza.html">手相講座</a></li>
+                        <li><a href="kantei.html">手相鑑定</a></li>
+                        <li><a href="gakkai.html">手相学会</a></li>
+                        <li><a href="shindan.html">手相診断</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>SNS</h4>
+                    <div class="footer-sns">
+                        <a href="https://lin.ee/pfM9Tjo" target="_blank" rel="noopener"><i class="fab fa-line"></i></a>
+                        <a href="https://x.com/mayotesoh" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@mayotesoh" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/mayotesoh/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@mayotesoh" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 手相のマヨネリ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ページトップに戻るボタン -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

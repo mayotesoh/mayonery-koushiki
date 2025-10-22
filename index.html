@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手相のマヨネリ - 手相学習得プログラム</title>
+    <meta name="description" content="手相のマヨネリの公式サイト。手相講座、手相鑑定、手相学会、手相診断を提供しています。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* X(Twitter)アイコンのフォールバック */
+        .fa-x-twitter::before {
+            content: "\e61b";
+        }
+        /* FontAwesomeが読み込まれない場合の代替 */
+        .footer-sns a[href*="x.com"] i::before,
+        .sns-btn.twitter i::before {
+            content: "𝕏" !important;
+            font-family: Arial, sans-serif !important;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">手相のマヨネリ</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link active">ホーム</a></li>
+                        <li><a href="kouza.html" class="nav-link">手相講座</a></li>
+                        <li><a href="kantei.html" class="nav-link">手相鑑定</a></li>
+                        <li><a href="gakkai.html" class="nav-link">手相学会</a></li>
+                        <li><a href="shindan.html" class="nav-link">手相診断</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">手相学で人生を豊かに</h1>
+                <p class="hero-subtitle fade-in">手相のマヨネリがあなたの手相学習得をサポートします</p>
+                <div class="hero-buttons fade-in">
+                    <a href="https://lin.ee/pfM9Tjo" class="btn btn-primary" target="_blank" rel="noopener">
+                        <i class="fab fa-line"></i> 公式LINEはこちら
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- マヨネリの活動 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">マヨネリの活動</h2>
+            <p class="section-subtitle">手相を通じて、皆様の人生をサポートする4つのサービス</p>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="service-title">手相講座</h3>
+                    <p class="service-description">手相学を基礎から応用まで学べる個別講座。全15回のマンツーマン指導で、確かな技術を習得できます。</p>
+                    <a href="kouza.html" class="service-link">詳しく見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3 class="service-title">手相鑑定</h3>
+                    <p class="service-description">プロの手相鑑定サービス。オンライン対応で、あなたの手相から人生のヒントを読み解きます。</p>
+                    <a href="kantei.html" class="service-link">詳しく見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-badge">完全無料</div>
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">手相学会</h3>
+                    <p class="service-description">完全無料のQ&Aコミュニティ。手相に関する疑問を気軽に質問でき、実践的な知識を学べます。</p>
+                    <a href="gakkai.html" class="service-link">詳しく見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-badge">完全無料</div>
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="service-title">手相診断</h3>
+                    <p class="service-description">オンライン無料診断ツール。約2分で完了する12問の質問で、あなたの性格を詳しく分析します。</p>
+                    <a href="shindan.html" class="service-link">詳しく見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 手相学で得られること -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">手相学で得られること</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="feature-title">自己理解の深化</h3>
+                    <p class="feature-description">手相から自分の性格や才能を知ることで、より良い人生の選択ができるようになります。</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3 class="feature-title">人生の指針</h3>
+                    <p class="feature-description">適性や転機の時期を知ることで、人生の重要な決断をサポートします。</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature-title">人間関係の改善</h3>
+                    <p class="feature-description">相手の性格や価値観を理解することで、より良いコミュニケーションが可能になります。</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="feature-title">専門技術の習得</h3>
+                    <p class="feature-description">手相鑑定の技術を身につけることで、新しいキャリアの可能性が広がります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SNS情報発信中 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">SNS情報発信中</h2>
+            <p class="section-subtitle">手相に関する情報を毎日発信しています</p>
+            <div class="sns-links">
+                <a href="https://lin.ee/pfM9Tjo" class="sns-btn line" target="_blank" rel="noopener">
+                    <i class="fab fa-line"></i>
+                    <span>公式LINE</span>
+                </a>
+                <a href="https://x.com/mayotesoh" class="sns-btn twitter" target="_blank" rel="noopener">
+                    <i class="fab fa-x-twitter"></i>
+                    <span>X (Twitter)</span>
+                </a>
+                <a href="https://www.tiktok.com/@mayotesoh" class="sns-btn tiktok" target="_blank" rel="noopener">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://www.instagram.com/mayotesoh/" class="sns-btn instagram" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/@mayotesoh" class="sns-btn youtube" target="_blank" rel="noopener">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>手相のマヨネリ</h3>
+                    <p>手相学を通じて、皆様の人生をサポートします</p>
+                </div>
+                <div class="footer-section">
+                    <h4>メニュー</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="kouza.html">手相講座</a></li>
+                        <li><a href="kantei.html">手相鑑定</a></li>
+                        <li><a href="gakkai.html">手相学会</a></li>
+                        <li><a href="shindan.html">手相診断</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>SNS</h4>
+                    <div class="footer-sns">
+                        <a href="https://lin.ee/pfM9Tjo" target="_blank" rel="noopener"><i class="fab fa-line"></i></a>
+                        <a href="https://x.com/mayotesoh" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@mayotesoh" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/mayotesoh/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@mayotesoh" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 手相のマヨネリ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ページトップに戻るボタン -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

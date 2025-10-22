@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手相鑑定 - 手相のマヨネリ</title>
+    <meta name="description" content="プロの手相鑑定サービス。オンライン対応で、あなたの手相から人生のヒントを読み解きます。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* X(Twitter)アイコンのフォールバック */
+        .fa-x-twitter::before {
+            content: "\e61b";
+        }
+        /* FontAwesomeが読み込まれない場合の代替 */
+        .footer-sns a[href*="x.com"] i::before,
+        .sns-btn.twitter i::before {
+            content: "𝕏" !important;
+            font-family: Arial, sans-serif !important;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">手相のマヨネリ</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">ホーム</a></li>
+                        <li><a href="kouza.html" class="nav-link">手相講座</a></li>
+                        <li><a href="kantei.html" class="nav-link active">手相鑑定</a></li>
+                        <li><a href="gakkai.html" class="nav-link">手相学会</a></li>
+                        <li><a href="shindan.html" class="nav-link">手相診断</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title fade-in">手相鑑定</h1>
+            <p class="page-subtitle fade-in">プロの手相鑑定で、あなたの人生をサポート</p>
+        </div>
+    </section>
+
+    <!-- 鑑定の特徴 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">鑑定の特徴</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="feature-title">オンライン対応</h3>
+                    <p class="feature-description">Google Meetを使用したオンライン鑑定。全国どこからでも受けられます。</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">詳細な分析</h3>
+                    <p class="feature-description">手相の法則に基づいた論理的で納得感のある鑑定を提供します。</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3 class="feature-title">個別対応</h3>
+                    <p class="feature-description">一人ひとりのお悩みに寄り添い、丁寧にカウンセリングします。</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">柔軟な時間設定</h3>
+                    <p class="feature-description">ご都合に合わせて日時を調整できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 鑑定メニュー -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">鑑定メニュー</h2>
+            <div class="menu-grid">
+                <div class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="images/kihonkantei.png" alt="基本鑑定">
+                    </div>
+                    <h3 class="menu-title">基本鑑定</h3>
+                    <p class="menu-description">手相を分析してあなたの設計を明確にします。設計に合わせた人生を送ることで、生きやすく本来の姿に近づける事ができます。</p>
+                    <div class="menu-price">
+                        <div class="price-item">30分：¥4,000</div>
+                        <div class="price-item">10分延長：¥1,000</div>
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="images/zikidasi.png" alt="流年鑑定">
+                    </div>
+                    <h3 class="menu-title">流年（時期）が必要な鑑定</h3>
+                    <p class="menu-description">流年を出すことで、人生のイベントの時期を明確化します。転職、引っ越し、恋愛など人生の転機の時期を出します。</p>
+                    <div class="menu-price">
+                        <div class="price-item">基本鑑定 + ¥2,000</div>
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="images/kanteisyo.png" alt="鑑定書の作成">
+                    </div>
+                    <h3 class="menu-title">鑑定書の作成</h3>
+                    <p class="menu-description">基本鑑定内容を鑑定書に残します。視覚的に伝わりやすいオリジナルの鑑定書を作成します。</p>
+                    <div class="menu-price">
+                        <div class="price-item">基本鑑定 + ¥1,000</div>
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-icon-large">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="menu-title">鑑定内容の録画サービス</h3>
+                    <p class="menu-description">鑑定の内容を録画してYouTubeに限定公開いたします。あとから見返せるので、鑑定内容を振り返るのに最適です。</p>
+                    <div class="menu-price">
+                        <div class="price-item">+ ¥1,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 鑑定の流れ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">鑑定の流れ</h2>
+            <div class="steps">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">お申し込み</h3>
+                        <p class="step-description">公式LINEからお申し込みください。</p>
+                    </div>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">日程調整</h3>
+                        <p class="step-description">ご希望の日時をお伺いし、鑑定の日程を決定します。</p>
+                    </div>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">お支払い</h3>
+                        <p class="step-description">鑑定前に料金のお支払いをお願いします。</p>
+                    </div>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">鑑定実施</h3>
+                        <p class="step-description">Google Meetを使用してオンラインで鑑定を行います。流年（時期出し）を取る場合は事前に写真を送って頂きたいです。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お悩みカテゴリ -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">こんなお悩みに対応</h2>
+            <div class="categories-grid">
+                <div class="category-card fade-in">
+                    <i class="fas fa-heart"></i>
+                    <h3>恋愛・結婚</h3>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>仕事・キャリア</h3>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-yen-sign"></i>
+                    <h3>金運・財運</h3>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-users"></i>
+                    <h3>人間関係</h3>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-spa"></i>
+                    <h3>健康・メンタル</h3>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-compass"></i>
+                    <h3>人生の方向性</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お支払い方法 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">お支払い方法</h2>
+            <div class="payment-methods">
+                <div class="payment-card fade-in">
+                    <i class="fas fa-university"></i>
+                    <h3>銀行振り込み</h3>
+                </div>
+                <div class="payment-card fade-in">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>PayPay</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>鑑定時間はどのくらいですか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>基本鑑定は30分です。10分単位で延長も可能です（延長料金：¥1,000/10分）。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>オンライン鑑定の方法は？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Google Meetを使用します。事前にURLをお送りしますので、そちらからアクセスしてください。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>キャンセルはできますか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>前日までのキャンセルは可能です。当日キャンセルの場合は、キャンセル料が発生する場合があります。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>両手の鑑定は可能ですか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、可能です。基本的に両手を見て総合的に鑑定します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">手相鑑定のお申し込み</h2>
+                <p class="cta-description">公式LINEからお気軽にお問い合わせください</p>
+                <a href="https://lin.ee/pfM9Tjo" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    <i class="fab fa-line"></i> 公式LINEでお申し込み
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>手相のマヨネリ</h3>
+                    <p>手相学を通じて、皆様の人生をサポートします</p>
+                </div>
+                <div class="footer-section">
+                    <h4>メニュー</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="kouza.html">手相講座</a></li>
+                        <li><a href="kantei.html">手相鑑定</a></li>
+                        <li><a href="gakkai.html">手相学会</a></li>
+                        <li><a href="shindan.html">手相診断</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>SNS</h4>
+                    <div class="footer-sns">
+                        <a href="https://lin.ee/pfM9Tjo" target="_blank" rel="noopener"><i class="fab fa-line"></i></a>
+                        <a href="https://x.com/mayotesoh" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@mayotesoh" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/mayotesoh/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@mayotesoh" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 手相のマヨネリ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ページトップに戻るボタン -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
